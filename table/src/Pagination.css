@@ -1,0 +1,64 @@
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px 20px; /* Added padding to avoid clipping */
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pagination-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .pagination-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  .pagination-info {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  button {
+    padding: 8px 12px; /* Ensure buttons have proper padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #eaeaea;
+  }
+  
+  button:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px; /* Ensure the input has a fixed width */
+    box-sizing: border-box;
+  }
+  
